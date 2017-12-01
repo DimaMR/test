@@ -1,0 +1,85 @@
+body { 
+  text-align: center;
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.todo {
+  display: inline-block;
+  margin: 20px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+}
+
+.todo__text,
+.todo__add , 
+.todo__edit,
+.todo__save,
+.todo__add_edit{
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.todo__edit{    
+  margin-right: 5px;
+}
+
+.todo__save{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.todo__add, .todo__add_edit, .todo__save{
+  padding: 5px 10px;
+}
+
+.todo__text, .todo__edit{
+  padding: 5px;
+}
+
+.todo__list {
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.todo__list-item {
+  cursor: pointer;
+  padding: 5px;
+  line-height: 20px;
+}
+
+.todo__list-item:nth-child(even) {
+  background-color: #eee;
+}
+
+.todo__list-item:hover {
+  background-color: #aaa;
+}
+
+.todo__list-item_completed_yes {
+  text-decoration: line-through;
+}
+
+.todo__list-item-text {
+  display: inline-block;
+  max-width: 480px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todo__list-item_completed_yes .todo__list-item-text {
+  text-decoration: line-through;
+}
+
+.todo__list-item-remove, .todo__list-item-edit, .todo__list-item-ok{
+  float: right;
+  opacity: 0.3;
+  margin-left: 15px;
+}
+
+.todo__list-item-remove:hover, .todo__list-item-edit:hover, .todo__list-item-ok:hover{
+  opacity: 1;
+}
